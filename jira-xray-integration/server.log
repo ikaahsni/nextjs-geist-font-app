@@ -1,0 +1,33 @@
+2025/08/26 04:32:20 ⚠️  WARNING: You are using demo credentials!
+2025/08/26 04:32:20 ⚠️  Please copy .env.sample to .env and update with your actual Jira credentials
+2025/08/26 04:32:20 ⚠️  The application will not work with real Jira integration until you provide valid credentials
+2025/08/26 04:32:20 ✅ Configuration loaded successfully
+2025/08/26 04:32:20    Jira Base URL: https://yourcompany.atlassian.net
+2025/08/26 04:32:20    Jira Project Key: TEST
+2025/08/26 04:32:20    Server Port: 8080
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/testcases            --> main.getTestCases (6 handlers)
+[GIN-debug] POST   /api/testcases            --> main.createTestCase (6 handlers)
+[GIN-debug] GET    /api/testcases/:key       --> main.getTestCase (6 handlers)
+[GIN-debug] GET    /api/testexecutions       --> main.getTestExecutions (6 handlers)
+[GIN-debug] POST   /api/testexecutions       --> main.createTestExecution (6 handlers)
+[GIN-debug] GET    /api/testexecutions/:key  --> main.getTestExecution (6 handlers)
+[GIN-debug] GET    /api/health               --> main.healthCheck (6 handlers)
+[GIN-debug] GET    /api/info                 --> main.getAPIInfo (6 handlers)
+[GIN-debug] GET    /                         --> main.main.func1 (6 handlers)
+2025/08/26 04:32:20 🚀 Server starting on port 8080
+2025/08/26 04:32:20 📋 API Documentation available at: http://localhost:8080/api/info
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2025/08/26 - 04:32:23 | 200 |      34.722µs |             ::1 | GET      "/"
+[GIN] 2025/08/26 - 04:32:23 | 200 |      82.763µs |             ::1 | GET      "/"
+[GIN] 2025/08/26 - 04:33:03 | 200 |      62.282µs |             ::1 | GET      "/api/health"
+[GIN] 2025/08/26 - 04:33:03 | 200 |     118.054µs |             ::1 | GET      "/api/health"
+[GIN] 2025/08/26 - 04:33:44 | 200 |      36.514µs |             ::1 | GET      "/api/health"
+[GIN] 2025/08/26 - 04:33:44 | 200 |      90.915µs |             ::1 | GET      "/api/health"
